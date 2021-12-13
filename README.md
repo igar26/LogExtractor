@@ -27,3 +27,6 @@ After Line2
 …
 After Line10
 
+
+To run this utility:
+python3 log_extractor_grep.py inputFile.txt extract_log.json output.txt
