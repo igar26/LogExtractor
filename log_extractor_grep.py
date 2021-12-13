@@ -51,7 +51,9 @@ def process_log_file(message_type):
     if stderr_bytes.decode():
         logging.fatal(stderr_bytes.decode())
         raise RuntimeError
-    print("out", stdout_str)
+    output_file.write("---------------Filtering {}-------------------\n\n".format(message_type))
+    output_file.write(stdout_str)
+    output_file.write("-----------------End--------------------------\n\n".format(message_type))
             
 logging.info("For every message in JSON file we are going to process the file twice")
 for message in message_type:
