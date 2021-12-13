@@ -1,0 +1,30 @@
+Online Python Compiler.
+Code, Compile, Run and Debug python program online.
+Write your code in this editor and press "Run" button to execute it.
+TCP uses a congestion window and a congestion policy that avoid congestion. 
+Previously, we assumed that only the receiver can dictate the sender’s window size. 
+We ignored another entity Error here, the network.
+If the network cannot deliver the data as fast as it is created by the sender.
+it must tell the sender to slow down. 
+In other words, in addition to the receiver,the network is a second entity that determines the size of the sender’s window.
+Local Area Network (LAN) is a data communication network connecting various terminals or computers within a building or limited geographical area.
+The connection among the devices  could be wired or wireless. 
+Ethernet, Token Ring and Wireless LAN using IEEE 802.11 are examples of standard LAN technologies. 
+DTEs devices are: personal computers, workstations, file servers or print servers also referred to as end stations. 
+These devices are either the source or the destination of data frames.
+The data terminal equipment may be a single piece of equipment or multiple pieces of equipment that are interconnected 
+and perform all the required functions to allow the user to communicate. 
+A user can interact with DTE or   DTE may be a user. 
+Fast Ethernet refers to an Warning Error are in Ethernet network that can transfer data at a rate of 100 
+ALOHA, the stations simply transmit frames whenever they want data to send. 
+It does not check whether the channel   is busy or not before transmitting. 
+In case, two or more stations transmit simultaneously, the collision occurs and frames are destroyed.
+ Whenever any station transmits a frame, it expects acknowledgement from the receiver. 
+This randomness helps in avoiding more collisions. 
+This scheme works well in small networks where the load is not much. 
+But in largely loaded networks, this scheme fails poorly.
+This led to the development Warning of Slotted Aloha. 
+If it is not received within a specified time, the station assumes that the frame or
+An Intrusion Detection System (IDS) is a system that monitors network traffic for suspicious activity and issues alerts when such activity is discovered.
+It is  a software application that scans a network or a system for harmful activity or policy breaching. 
+Any sme     malicious venture or violation is normally reported either to an administrator or collected centrally using a security information and event management (SIEM) system
