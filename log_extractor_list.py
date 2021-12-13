@@ -43,8 +43,6 @@ message_type = [x for x in data]
 # NOTE: Planning to use lists for processing each log output
 
 def process_log_file(message_type):
-    max_lenght_deque = data[message_type]["before"] + data[message_type]["after"]
-    logging.info("Intilize a deque for storing the lines with max length to be {}".format(max_lenght_deque))
     with open(args.input_file.name) as input_file:
         list_of_lines = input_file.readlines()
         for i, each_line in enumerate(list_of_lines):

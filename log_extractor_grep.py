@@ -45,9 +45,12 @@ output_file = open(args.output_file.name, 'w+')
 
 def process_log_file(message_type):
     command = "grep {} -B {} -A {} {}".format(message_type, data[message_type]["before"], data[message_type]["after"], args.input_file.name)
-    out = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    out = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout_bytes, stderr_bytes = out.communicate()
     stdout_str = stdout_bytes.decode()
+    if stderr_bytes.decode():
+        logging.fatal(stderr_bytes.decode())
+        raise RuntimeError
     print("out", stdout_str)
             
 logging.info("For every message in JSON file we are going to process the file twice")
